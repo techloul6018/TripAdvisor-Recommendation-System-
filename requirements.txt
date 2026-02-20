@@ -1,0 +1,8 @@
+pandas
+numpy
+rank-bm25
+gensim
+scikit-learn
+matplotlib
+scipy
+streamlit
