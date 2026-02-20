@@ -22,7 +22,7 @@ Ce projet implante un moteur de recommandation hybride pour les établissements 
 
 ### 1. Préparation & Agrégation
 
-Les avis sont regroupés par identifiant de lieu. Pour éviter les bruits statistiques, nous appliquons un filtrage sur la distribution du nombre de mots :
+Les avis sont regroupés par identifiant de lieu. Pour éviter les bruits statistiques, nous appliquons un filtrage sur la distribution du nombre de mots : $$\text{Seuil} = Q_3 + 1.5 \times \text{IQR}$$
 
 
 ### 2. Algorithmes de Recommandation
@@ -31,6 +31,7 @@ Le projet compare deux approches majeures :
 
 * **BM25 (Best Matching 25)** : Idéal pour trouver des lieux partageant des caractéristiques textuelles spécifiques.
 * **Word2Vec** : Transforme chaque lieu en un vecteur dans un espace de dimension 100. La similarité est calculée par :
+$$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
 
 
 
@@ -88,16 +89,3 @@ Les tests sur 200 requêtes montrent une excellente convergence :
 * **Distribution** : Une forte concentration des résultats pertinents dans le Top 3 des recommandations.
 
 ---
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues !
-
-1. Forkez le projet.
-2. Créez votre branche (`git checkout -b feature/AmazingFeature`).
-3. Commitsez vos changements.
-4. Pushsez sur la branche et ouvrez une Pull Request.
-
----
-
-**Souhaitez-vous que je rédige également une section "Limites et Perspectives" pour enrichir le rapport de votre projet ?**
