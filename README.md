@@ -44,25 +44,12 @@ Le système est testé sur sa capacité à classer en premier des lieux similair
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation et Données
 
-1. **Cloner le projet**
-```bash
-git clone https://github.com/votre-username/tripadvisor-recommender.git
-cd tripadvisor-recommender
-
-```
-
-
-2. **Installer les dépendances**
-```bash
-pip install pandas rank-bm25 gensim scikit-learn matplotlib scipy
-
-```
-
-
-3. **Données**
-Assurez-vous d'avoir les fichiers `reviews83325.csv` et `Tripadvisor.csv` à la racine.
+1. **Cloner le projet** (le projet utilise **Git LFS** pour les datasets) :
+   ```bash
+   git clone [https://github.com/votre-username/tripadvisor-recommender.git](https://github.com/votre-username/tripadvisor-recommender.git)
+   cd tripadvisor-recommender
 
 ---
 
