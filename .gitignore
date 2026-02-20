@@ -1,0 +1,15 @@
+reviews83325.csv
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Data (si tu ne veux pas les envoyer malgré Git LFS)
+# data/*.csv
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
