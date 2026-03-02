@@ -58,7 +58,8 @@ Ouvrez le notebook `main.ipynb` ou importez les fonctions de recommandation :
 reco_bm25, reco_w2v = recommend(idx, df, bm25, vectors)
 
 ```
-Vous pouvez aussi utiliser la commande ```python 
+Vous pouvez aussi utiliser la commande 
+```python 
 streamlit run app.py
 ```
  pour avoir le projet sur votre navigateur en local, avec une application streamlit pour trouver une surprise ! 
