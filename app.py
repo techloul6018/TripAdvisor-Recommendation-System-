@@ -50,7 +50,7 @@ with tab2:
     place_list = df['nom'].tolist()
     selected_place = st.selectbox("Choisissez un établissement :", place_list)
     
-    n_reco = st.slider("Nombre de recommandations", 3, 10, 5, key="slider_place")
+    n_reco = st.slider("Nombre de recommandations", 3, 8, 3, key="slider_place")
     
     if st.button("Générer des recommandations", key="btn_place"):
         query_idx = df[df['nom'] == selected_place].index[0]

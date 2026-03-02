@@ -1,7 +1,3 @@
-Voici une proposition de fichier `README.md` structuré, professionnel et dynamique pour ton projet de système de recommandation TripAdvisor.
-
----
-
 # 🌍 TripAdvisor Recommendation System
 
 Ce projet implante un moteur de recommandation hybride pour les établissements TripAdvisor (hôtels, restaurants, attractions) en utilisant des techniques de Traitement du Langage Naturel (NLP) et de Recherche d'Information (IR). L'intelligence du système repose sur l'analyse sémantique des avis laissés par les utilisateurs.
@@ -58,14 +54,11 @@ Le système est testé sur sa capacité à classer en premier des lieux similair
 Ouvrez le notebook `dev.ipynb` ou importez les fonctions de recommandation :
 
 ```python
-# Exemple de recommandation par texte libre (Ambiance)
-recommend_by_text("luxury room swimming pool spa breakfast", model_w2v)
-
-# Exemple de recommandation par lieu similaire
-recommend_bm25(query_index=45)
+# Exemple de recommandation par lieu similaire avec les 2 methodes
+reco_bm25, reco_w2v = recommend(idx, df, bm25, vectors)
 
 ```
-
+Vous pouvez aussi utiliser la commande "streamlit run app.py" pour avoir le projet sur votre navigateur en local, avec une application streamlit pour trouver une surprise ! 
 ---
 
 ## 📈 Résultats d'Évaluation
