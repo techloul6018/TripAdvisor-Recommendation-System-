@@ -51,19 +51,22 @@ Le système est testé sur sa capacité à classer en premier des lieux similair
 
 ## 🖥 Utilisation
 
-Ouvrez le notebook `dev.ipynb` ou importez les fonctions de recommandation :
+Ouvrez le notebook `main.ipynb` ou importez les fonctions de recommandation :
 
 ```python
 # Exemple de recommandation par lieu similaire avec les 2 methodes
 reco_bm25, reco_w2v = recommend(idx, df, bm25, vectors)
 
 ```
-Vous pouvez aussi utiliser la commande "streamlit run app.py" pour avoir le projet sur votre navigateur en local, avec une application streamlit pour trouver une surprise ! 
+Vous pouvez aussi utiliser la commande ```python 
+streamlit run app.py
+```
+ pour avoir le projet sur votre navigateur en local, avec une application streamlit pour trouver une surprise ! 
 ---
 
 ## 📈 Résultats d'Évaluation
 
-Les tests sur 200 requêtes montrent une excellente convergence :
+Les tests sur 200 requêtes réalisé dans le dev_backup.ipynb montrent une excellente convergence :
 
 * **Mode de l'erreur** : 0 (le système place très souvent un lieu pertinent en première position).
 * **Distribution** : Une forte concentration des résultats pertinents dans le Top 3 des recommandations.
